@@ -1,0 +1,1 @@
+[{"id":1,"name":"Pepper Pot","username":"Tender Beef in cinammony salty brine","password":"Test111","isAdmin":true,"cart":[],"admin":true},{"id":2,"name":"admin","username":"admin","password":"test","isAdmin":true,"cart":[],"admin":true},{"id":3,"name":"notAdmin","username":"notAdmin","password":"test","isAdmin":false,"cart":[],"admin":false}]

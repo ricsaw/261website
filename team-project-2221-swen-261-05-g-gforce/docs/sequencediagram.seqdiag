@@ -1,0 +1,8 @@
+Title: Sequence Diagram
+User->GUI: Click to add to cart
+GUI->app.component.ts: addTo\nCart(Product)
+app.component.ts->userService.ts: addToCart\n(currUserId,Product)
+app.component.ts->dataTransfer.ts: dataTransfer.menu.productservice.getProduct\n(productID).subscribe()
+userService.ts -> dataTransfer.ts: menu.getProducts()
+dataTransfer.ts -> menu.component.ts: getProducts()
+menu.component.ts -> Product.service.ts: service.getProducts.\nsubscribe()

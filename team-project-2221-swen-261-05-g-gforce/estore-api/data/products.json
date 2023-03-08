@@ -1,0 +1,36 @@
+[ {
+  "id" : 2,
+  "name" : "Manti",
+  "description" : "Turkish ravio",
+  "price" : 23.32,
+  "quantity" : 6,
+  "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+}, {
+  "id" : 3,
+  "name" : "Lamb Biryani",
+  "description" : "Indian spices, rice, and lamb",
+  "price" : 44.0,
+  "quantity" : 759,
+  "imageUrl" : "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lamb-biryani-83e5c3d.jpg?quality=90&webp=true&resize=300,272"
+}, {
+  "id" : 4,
+  "name" : "Kunefe",
+  "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+  "price" : 100.0,
+  "quantity" : 719,
+  "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+}, {
+  "id" : 5,
+  "name" : "Baklava",
+  "description" : "Greek or Turkish",
+  "price" : 100.0,
+  "quantity" : 908,
+  "imageUrl" : "https://i0.wp.com/www.onceuponachef.com/images/2021/08/Baklava-scaled.jpg?resize=760%2C931&ssl=1"
+}, {
+  "id" : 6,
+  "name" : "Pide ",
+  "description" : "Turkish style Pizza",
+  "price" : 5.49,
+  "quantity" : 120,
+  "imageUrl" : "https://lacuisinedegeraldine.fr/wp-content/uploads/2021/06/Pide-04258-2-Kopie-1020x600.jpg"
+} ]

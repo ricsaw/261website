@@ -1,0 +1,154 @@
+<ng-container *ngIf="this.datatransfer.home.currUser == null">
+    <h3> Please Log-in</h3>
+    <button routerLink="/menu" class="btn btn-success"> Go to main menu</button>
+</ng-container>
+
+<ng-container *ngIf="this.datatransfer.home.currUser.admin == false; else emptyUser">
+    <ng-container *ngIf="this.datatransfer.home.currUser.cart.length != 0">
+        <div class="row">
+            <div class="col-g-5">
+                <div class="container">
+                    <h4 class="mb-3">Shipping Address</h4>
+                    <h5 class="text">All the boxes show the current address</h5>
+                    <form #addForm="ngForm" (ngSubmit)="this.onAddAddress(addForm.value)">
+                        <div class="row g-3">
+                            <div class="col-sm-5">
+                                <label for="name" class="form-label"> Name </label>
+                                <input id="name" type="text" ngModel name="name" class="form-control"
+                                    placeholder="{{this.currentAddress?.name}}">
+                                <div class="invalid-feedback">
+                                    Valid name is required.
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <label for="lastname" class="form-label"> Last Name </label>
+                                <input id="lastname" ngModel name="lastname" type="text" class="form-control"
+                                    placeholder="{{this.currentAddress?.lastname}}">
+                                <div class="invalid-feedback">
+                                    Valid surname is required.
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="address" class="form-label">Street and Apt.No</label>
+                                <input id="address" type="text" ngModel name="address" class="form-control"
+                                    placeholder="{{this.currentAddress?.address}}">
+                                <div class="invalid-feedback">
+                                    Valid address is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="city" class="form-label">City</label>
+                                <input id="city" type="text" ngModel name="city" class="form-control"
+                                    placeholder="{{this.currentAddress?.city}}">
+                                <div class="invalid-feedback">
+                                    Valid city is required.
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">State</label>
+                                <input id="state" type="text" ngModel name="state" class="form-control"
+                                    placeholder="{{this.currentAddress?.state}}">
+                                <div class="invalid-feedback">
+                                    Valid state is required.
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">ZIP</label>
+                                <input id="zip" type="text" ngModel name="zip" class="form-control"
+                                    placeholder="{{this.currentAddress?.zip}}">
+                                <div class="invalid-feedback">
+                                    Valid ZIP is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="phone" class="form-label">Phone number</label>
+                                <input id="zip" type="text" ngModel name="phone" class="form-control"
+                                    placeholder="{{this.currentAddress?.phone}}">
+                                <div class="invalid-feedback">
+                                    Valid Phone is required.
+                                </div>
+                            </div>
+                        </div>
+                    </form>                    
+                </div>
+            </div>
+            <div class="col-sm-15">
+                <div class="container col-4 rounded">
+                    <div class="container">
+                        <div class="card-table">
+                            <div class="products">
+                                <table class="table table-hover table-dark table-responsive" aria-hidden="true">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Product Name</th>
+                                            <th>Price</th>
+                                            <th>Quantity</th>
+                                            <th>Total</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let item of this.datatransfer.home.currUser.cart;">
+                                            <!--sort items by name-->
+                                            <td>{{item?.name}}</td>
+                                            <td min="0" max="2">${{item?.price.toFixed(2)}}</td>
+                                            <td class="btn-group d-flex justify-content-center">
+                                                <div class="d-flex justify-content-center">
+                                                    <a (click)="this.removeItem(item?.id);  getTotalPrice();"><h6>-</h6></a>
+                                                    <div class="spacer"></div>
+                                                    <h6 class="d-flex justify-content-center">{{item?.quantity}}</h6>
+                                                    <div class="spacer"></div>
+                                                    <a (click)="this.datatransfer.home.addToCart(item);  getTotalPrice();"><h6>+</h6></a>
+                                                </div>
+                                            </td>
+                                            <td type="number" min="0" max="2">${{getItemTotalPrice(item).toFixed(2)}}</td>
+                                            <td>
+                                                <button (click)="this.removeAllItem(item?.id, item?.quantity);  getTotalPrice()"
+                                                    class="btn btn-danger"><em class="fa fa-trash"></em></button>
+                                                <div class="spacer"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">
+                                                <strong>
+                                                    <h5>Grand Total : ${{getTotalPrice().toFixed(2)}} </h5>
+                                                </strong>
+                                                <div class="spacer"></div>
+                                                <button (click)="this.submitOrder(); this.onAddAddress(addForm.value)"
+                                                    routerLink="/payment" class="btn btn-success">Checkout</button>
+                                                <div class="spacer"></div>
+                                                <button (click)="emptyCart()" class="btn btn-danger">EmptyCart</button>
+                                                <div class="spacer"></div>
+                                                <button routerLink="/menu" class="btn btn-primary">ShopMore</button>
+                                            </td>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="this.datatransfer.home.currUser.cart.length == 0">
+        <div class="container" style="color:var(--dark-4); background-color: var(--dark-2);">
+            <div class="center">
+                <img src="https://www.godinein.com/assets/frontend/default/images/empty-cart.png" alt="" class="scr">
+                <h4>Your Cart is empty!</h4>
+                <h6>Add item to it now</h6>
+                <button routerLink="/menu" class="btn btn-primary">Shop Now</button>
+            </div>
+        </div>
+    </ng-container>
+
+</ng-container>
+
+<ng-template #emptyUser>
+    <h6> Sorry, only customers can see this page</h6>
+    <button routerLink="/menu" class="btn btn-success"> Go to main menu</button>
+</ng-template>

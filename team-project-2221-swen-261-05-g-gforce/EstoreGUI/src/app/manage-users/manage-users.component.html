@@ -1,0 +1,65 @@
+<!-- Product container admin-->
+<div *ngIf="this.dataTransfer.home.currIsAdmin() === true; else showDisabled">
+    <div class="container" id="main-container">
+        <!-- Add a row -->
+        <div class="row">
+            <script>this.dataTransfer.home.getUsers()</script>
+            <div *ngFor="let user of this.userList" class="col-md-6 col-xl-3">
+                <!-- loop through products and create card for each -->
+                <div class="card m-b-30">
+                    <div class="card-body row">
+                        <div class="col-6 card-title align-self-center mb-0">
+                            <h5>{{user?.name}}</h5>
+                        </div>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <!-- Sub-Categories of product-->
+                        <li class="list-group-item"><strong>Username:</strong>
+                            {{user?.username}}</li>
+                        <li class="list-group-item"><strong>Password:</strong>
+                            {{user?.password}}</li>
+                        <li class="list-group-item" *ngIf="user?.name != 'admin'">
+                            <strong>Admin Status:</strong>
+                            <div class="spacer"></div>
+                            <a  class="btn btn-primary btn-sm rounded" (click)="this.toggleAdmin(user)">{{user?.admin === true ? 'True' : 'False'}}</a>
+                        </li>
+                        <li class="list-group-item" *ngIf="user?.admin === false">
+                            <strong>Cart:</strong><br>
+                            <!--Loop through products in cart-->
+
+                            <table class="table table-striped table-hover table-dark text-center" id="cart-table" data-show-refresh="true"
+                                data-auto-refresh="true" aria-hidden="true">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Product</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let product of user.cart; let i=index;">
+                                        <td data-field="quantity">x{{product?.quantity}}</td>
+                                        <td data-field="price">${{product?.price}}</td>
+                                        <td data-field="name">{{product?.name}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <div *ngIf="user?.name != 'admin'">
+                            <div class="float-right btn-group btn-group-sm">
+                                <a (click)="this.dataTransfer.home.userButtonManager(user, 'delete')" class="btn btn-secondary"
+                                    data-placement="top" data-original-title="Delete"><em class="fa fa-times"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #showDisabled>
+    <h3> Sorry, only admins can see this page</h3>
+    <button routerLink="/menu" class="btn btn-success"> Go to main menu</button>
+</ng-template>

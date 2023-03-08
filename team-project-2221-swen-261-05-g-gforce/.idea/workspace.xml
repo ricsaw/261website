@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad9d3d92-ae93-4bf8-8aa1-54c0f3189b99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/estore-api/data/address.json" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/data/address.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/EstoreGUI/src/app/address.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/EstoreGUI/src/app/address.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/EstoreGUI/src/app/check-out/check-out.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/EstoreGUI/src/app/check-out/check-out.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/EstoreGUI/src/app/check-out/check-out.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/EstoreGUI/src/app/check-out/check-out.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/estore-api/src/main/java/com/products/api/productsapi/model/User.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FExrimTOrbR7rl8D824d4C14iP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="profiler.jvm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad9d3d92-ae93-4bf8-8aa1-54c0f3189b99" name="Changes" comment="" />
+      <created>1664071251051</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664071251051</updated>
+      <workItem from="1664071255243" duration="848000" />
+      <workItem from="1665259369367" duration="13000" />
+      <workItem from="1665283201043" duration="18000" />
+      <workItem from="1665283427782" duration="41000" />
+      <workItem from="1665596144640" duration="705000" />
+      <workItem from="1667686053711" duration="94000" />
+      <workItem from="1667695658742" duration="94000" />
+      <workItem from="1667765931265" duration="168000" />
+      <workItem from="1667844153240" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

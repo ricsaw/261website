@@ -1,0 +1,153 @@
+<div *ngIf="this.dataTransfer.home.loggedIn() === true; else showDisabled" class="d-flex justify-content-center">
+    <div class="col">
+        <div class="row d-flex justify-content-center" style="color:var(--dark-4);">
+            <h1>Current Orders</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="container text-center rounded d-flex justify-content-center">
+                <div class="container d-flex justify-content-center">
+                    <div class="card-table">
+                        <div class="products">
+                            <table class="table table-hover table-dark table-responsive" aria-hidden="true">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>User Id</th>
+                                        <th>Card Number</th>
+                                        <th>Expiration Date</th>
+                                        <th>Security Code</th>
+                                        <th>Total</th>
+                                        <th>Cart</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let order of this.currUser.currentOrders">
+                                        <td>{{order?.userId}}</td>
+                                        <td>{{order?.cardNumber}}</td>
+                                        <td>{{order?.expDate}}</td>
+                                        <td>{{order?.securityCode}}</td>
+                                        <td>${{this.getTotalPrice(order)}}</td>
+                                        <td>
+                                            <button type="button" id="updateTable"
+                                                class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false"
+                                                data-original-title="shop-cart">Products</button>
+                                            <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="dropdownMenuButton"
+                                                onclick="event.stopPropagation()">
+                                                <!--Loop through products in cart-->
+                                                <table class="table table-striped text-center" id="cart-table" data-show-refresh="true" data-auto-refresh="true" aria-hidden="true">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th scope="col">Quantity</th>
+                                                            <th scope="col">Price</th>
+                                                            <th scope="col">Product</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let product of order.products">
+                                                            <td data-field="quantity">x{{product?.quantity}}</td>
+                                                            <td data-field="price">${{(product?.price*product?.quantity).toFixed(2)}}</td>
+                                                            <td data-field="name">{{product?.name}}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-danger"
+                                                    (click)="this.deleteOrder(order)">
+                                                    Delete
+                                                </button>
+                                                
+                                                <div *ngIf="this.dataTransfer.home.currIsAdmin()===true">
+                                                    <div class="spacer-vert"></div>
+                                                    <button type="button" class="btn btn-success" (click)="this.completeOrder(order)">
+                                                        Complete
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center" style="color:var(--dark-4);">
+            <h1 class="text-center">Previous Orders</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="container text-center rounded d-flex justify-content-center">
+                <div class="container d-flex justify-content-center">
+                    <div class="card-table">
+                        <div class="products">
+                            <table class="table table-hover table-dark table-responsive" aria-hidden="true">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>User Id</th>
+                                        <th>Card Number</th>
+                                        <th>Expiration Date</th>
+                                        <th>Security Code</th>
+                                        <th>Total</th>
+                                        <th>Cart</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let order of this.currUser.previousOrders">
+                                        <td>{{order?.userId}}</td>
+                                        <td>{{order?.cardNumber}}</td>
+                                        <td>{{order?.expDate}}</td>
+                                        <td>{{order?.securityCode}}</td>
+                                        <td>${{this.getTotalPrice(order)}}</td>
+                                        <td>
+                                            <button type="button" id="updateTable" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false" data-original-title="shop-cart">Products</button>
+                                            <div class="dropdown-menu dropdown-menu-right text-center" aria-labelledby="dropdownMenuButton"
+                                                onclick="event.stopPropagation()">
+                                                <!--Loop through products in cart-->
+                                                <table class="table table-striped text-center" id="cart-table" data-show-refresh="true"
+                                                    data-auto-refresh="true" aria-hidden="true">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th scope="col">Quantity</th>
+                                                            <th scope="col">Price</th>
+                                                            <th scope="col">Product</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr *ngFor="let product of order.products">
+                                                            <td data-field="quantity">x{{product?.quantity}}</td>
+                                                            <td data-field="price">${{(product?.price*product?.quantity).toFixed(2)}}</td>
+                                                            <td data-field="name">{{product?.name}}</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="col">
+                                                <button type="button" class="btn btn-danger"
+                                                    (click)="this.archiveOrder(order)">
+                                                    Archive
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #showDisabled>
+    <h3>Sorry, only logged in user can see this screen</h3>
+    <button routerLink="/menu" class="btn btn-success"> Go to main menu</button>
+</ng-template>

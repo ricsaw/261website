@@ -1,0 +1,31 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>240</w><h>180</h></coordinates><panel_attributes>_Inventory: Class_
+--
+- products: ArrayList
+--
++ getProduct( int id)
++ createProduct(float price, int quantity)
++ deleteProduct(int id)
++ updateProduct(int id)
+--
+Responsibilites
+- Manage the selected products
+- Select new products</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>300</x><y>290</y><w>210</w><h>290</h></coordinates><panel_attributes>_Product: Class_
+--
+- name: String
+- price: Float
+- quantity: int
+- description: String
+--
+__Setters__
++ setName(String name)
++ setDescription(String description)
++ setPrice(float price)
++ setQuantity(int quantity)
++ setId(int id)
+    
+__Getters__
++ getName(): String
++ getDescription(): String
++ getPrice(): float
++ getQuantity(): int
++ getId(): int</panel_attributes><additional_attributes></additional_attributes></element></diagram>

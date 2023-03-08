@@ -1,0 +1,26 @@
+[ {
+  "id" : 5,
+  "code" : "654321",
+  "discount" : 1.0,
+  "expirationDate" : "06/11/2022"
+}, {
+  "id" : 7,
+  "code" : "123456",
+  "discount" : 0.25,
+  "expirationDate" : "12/11/2022"
+}, {
+  "id" : 9,
+  "code" : "234567",
+  "discount" : 0.5,
+  "expirationDate" : "22/11/2022"
+}, {
+  "id" : 11,
+  "code" : "blackfriday",
+  "discount" : 0.01,
+  "expirationDate" : "11/11/2021"
+}, {
+  "id" : 12,
+  "code" : "swen261",
+  "discount" : 0.1,
+  "expirationDate" : "8/11/2022"
+} ]

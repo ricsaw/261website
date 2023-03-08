@@ -1,0 +1,171 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+@import 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css';
+
+
+
+:root{
+  /*
+  --dark-5:#0A0903;
+  --dark-4:#393C41;
+  --dark-3p5:#555A62;
+  --dark-3:#686E78;
+  --dark-2: #727883;
+  --dark-1:#D3D5D9;
+  --accent-dark:#514A98;
+  --accent-light:#9882D0;
+  */
+
+  --dark-5: #3C3744;
+  --dark-4: #444444;
+  --dark-3p5: #DADADA; /* Background of list items */
+  --dark-3: #F3F3F3;
+  --dark-2: #ffffff; /* Background color */
+  --dark-1: #000000; /* Text color */
+  --light: #ffffff;
+  --accent-dark: #090C9B; /* Cart icon button, dropdown buttons (highlighted) */
+  --accent-light: #156af4; /* Cart icon button, dropdown buttons */
+}
+
+body {
+	background-color: var(--dark-2);
+	color: var(--dark-1);
+}
+
+a {
+  cursor: pointer;
+  color: var(--dark-1);
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.card-table{
+  border-color:var(--dark-4) !important;
+  background-color: var(--dark-3) !important;
+  color: var(--dark-1)!important;
+  -webkit-box-shadow: var(--dark-5)!important;
+  box-shadow: var(--dark-5)!important;
+}
+
+.card {
+  border: none;
+  background-color: var(--dark-3) !important;
+  -webkit-box-shadow: var(--dark-5);
+  box-shadow: var(--dark-5);
+  margin-bottom: 30px;
+}
+
+.w-60 {
+  width: 60px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+.show>.btn-primary.dropdown-toggle {
+  color: var(--light)!important;
+  background-color: var(--accent-dark)!important;
+  border-color: var(--accent-dark)!important;
+}
+.list-group-item {
+  border: none;
+  background-color: var(--dark-3p5)!important;
+  -webkit-box-shadow: var(--dark-5);
+  color: var(--dark-1)!important;
+  box-shadow: var(--dark-5);
+  margin-bottom: 30px;
+}
+.btn-primary {
+  background-color: var(--accent-light)!important;
+  border-color: var(--accent-light)!important;
+  color: var(--light) !important;
+}
+.btn-primary:hover {
+  background-color: var(--accent-dark)!important;
+  border-color: var(--accent-dark)!important;
+}
+.btn-primary:active{
+  background-color: var(--accent-dark)!important;
+  border-color: var(--accent-dark)!important;
+}
+.bi-cart-fill {
+  color: var(--light);
+}
+.fa-pencil{
+  color: var(--light);
+}
+.fa-times{
+  color: var(--light);
+}
+.navbar-dark{
+  background-color: var(--dark-4);
+}
+.bg-dark {
+  background-color: var(--dark-4) !important;
+}
+.dropdown-menu {
+  background-color: var(--dark-3)!important;
+}
+.dropdown-item {
+  color: var(--dark-1) !important;
+  background-color: var(--dark-3);
+}
+.dropdown-item:hover {
+  color:var(--dark-1);
+  background-color: var(--dark-3p5);
+}
+
+.thead-light{
+  background-color: var(--dark-4);
+  color:var(--dark-1);
+}
+.table .th {
+  background-color: var(--dark-4);
+  color: var(--dark-1);
+}
+.table .table-dark{
+  background-color: var(--dark-4)!important;
+  color: var(--dark-1)!important;
+}
+.table{
+  background-color: var(--dark-3)!important;
+    color: var(--dark-1);
+}
+.table .thead-dark th{
+  background-color: var(--dark-4);
+  color: #ffffff;
+}
+.spacer{
+  width: 6px;
+  height: auto;
+  display: inline-block;
+}
+.spacer-vert{
+  height: 6px;
+  width: auto;
+  display: inline-block;
+}
+.modal-header{
+  border-color:var(--dark-1);
+  background-color: var(--dark-4);
+  color: var(--light);
+}
+.modal-content{
+  background-color: var(--dark-3);
+  color: var(--dark-1);
+}
+i {
+  color: var(--dark-1);
+}
+
+
+

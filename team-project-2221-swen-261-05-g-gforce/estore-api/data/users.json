@@ -1,0 +1,550 @@
+[ {
+  "id" : 2,
+  "name" : "admin",
+  "username" : "admin",
+  "password" : "test",
+  "isAdmin" : true,
+  "cart" : [ ],
+  "currentOrders" : [ {
+    "id" : 357,
+    "userId" : 11,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 2,
+      "name" : "Manti",
+      "description" : "Turkish ravio",
+      "price" : 23.32,
+      "quantity" : 1,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ {
+      "id" : 0,
+      "name" : "name",
+      "lastname" : "lastname",
+      "address" : "RIT",
+      "city" : "rochester",
+      "state" : "new york",
+      "zip" : 14623,
+      "phone" : "1",
+      "defaultOrNot" : true
+    } ]
+  }, {
+    "id" : 358,
+    "userId" : 20,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 2,
+      "name" : "Manti",
+      "description" : "Turkish ravio",
+      "price" : 23.32,
+      "quantity" : 1,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ {
+      "id" : 0,
+      "name" : "name",
+      "lastname" : "lastname",
+      "address" : "address",
+      "city" : "city",
+      "state" : "state",
+      "zip" : 0,
+      "phone" : "country",
+      "defaultOrNot" : true
+    } ]
+  }, {
+    "id" : 359,
+    "userId" : 21,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 2,
+      "name" : "Manti",
+      "description" : "Turkish ravio",
+      "price" : 23.32,
+      "quantity" : 1,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ null ]
+  }, {
+    "id" : 360,
+    "userId" : 25,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 1,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    }, {
+      "id" : 3,
+      "name" : "Lamb Biryani",
+      "description" : "Indian spices, rice, and lamb",
+      "price" : 44.0,
+      "quantity" : 1,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ null ]
+  }, {
+    "id" : 363,
+    "userId" : 13,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 2,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    } ],
+    "address" : [ null ]
+  }, {
+    "id" : 364,
+    "userId" : 13,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 2,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    } ],
+    "address" : [ null ]
+  } ],
+  "previousOrders" : [ {
+    "id" : 353,
+    "userId" : 13,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 5,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    }, {
+      "id" : 3,
+      "name" : "Lamb Biryani",
+      "description" : "Indian spices, rice, and lamb",
+      "price" : 44.0,
+      "quantity" : 6,
+      "imageUrl" : "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lamb-biryani-83e5c3d.jpg?quality=90&webp=true&resize=300,272"
+    }, {
+      "id" : 2,
+      "name" : "Manti",
+      "description" : "Turkish ravio",
+      "price" : 23.32,
+      "quantity" : 3,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ {
+      "id" : 0,
+      "name" : "name",
+      "lastname" : "lastname",
+      "address" : "RIT",
+      "city" : "rochester",
+      "state" : "new york",
+      "zip" : 14623,
+      "phone" : "1",
+      "defaultOrNot" : true
+    } ]
+  } ],
+  "coupons" : [ {
+    "id" : 1,
+    "code" : "123456",
+    "discount" : 0.25,
+    "expirationDate" : null
+  } ],
+  "address" : [ {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  } ],
+  "darkMode" : false,
+  "admin" : true,
+  "addresses" : [ {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  } ],
+  "defaultAddress" : {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  },
+  "total" : 0.0
+}, {
+  "id" : 4,
+  "name" : "Grungus",
+  "username" : "TheGrungLord",
+  "password" : "test",
+  "isAdmin" : false,
+  "cart" : [ {
+    "id" : 3,
+    "name" : "Lamb Biryani",
+    "description" : "Indian spices, rice, and lamb",
+    "price" : 44.0,
+    "quantity" : 4,
+    "imageUrl" : "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lamb-biryani-83e5c3d.jpg?quality=90&webp=true&resize=300,272"
+  }, {
+    "id" : 4,
+    "name" : "Kunefe",
+    "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+    "price" : 100.0,
+    "quantity" : 2,
+    "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+  } ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ {
+    "id" : 1,
+    "code" : "123456",
+    "discount" : 0.25,
+    "expirationDate" : null
+  } ],
+  "address" : [ ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ ],
+  "defaultAddress" : null,
+  "total" : 376.0
+}, {
+  "id" : 5,
+  "name" : "Steve",
+  "username" : "TheStevester",
+  "password" : "supersteve",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ ],
+  "defaultAddress" : null,
+  "total" : 0.0
+}, {
+  "id" : 6,
+  "name" : "Shmunky",
+  "username" : "Shmunkster",
+  "password" : "OMEGAshmunk",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ ],
+  "defaultAddress" : null,
+  "total" : 0.0
+}, {
+  "id" : 7,
+  "name" : "brungus",
+  "username" : "brungster",
+  "password" : "test",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ ],
+  "defaultAddress" : null,
+  "total" : 0.0
+}, {
+  "id" : 11,
+  "name" : "antar",
+  "username" : "antar",
+  "password" : "antar",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  } ],
+  "darkMode" : true,
+  "admin" : false,
+  "addresses" : [ {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  } ],
+  "defaultAddress" : {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  },
+  "total" : 0.0
+}, {
+  "id" : 13,
+  "name" : "notAdmin",
+  "username" : "notAdmin",
+  "password" : "test",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ {
+    "id" : 357,
+    "userId" : 11,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 2,
+      "name" : "Manti",
+      "description" : "Turkish ravio",
+      "price" : 23.32,
+      "quantity" : 1,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ null ]
+  }, {
+    "id" : 355,
+    "userId" : 13,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 2,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    }, {
+      "id" : 3,
+      "name" : "Lamb Biryani",
+      "description" : "Indian spices, rice, and lamb",
+      "price" : 44.0,
+      "quantity" : 4,
+      "imageUrl" : "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lamb-biryani-83e5c3d.jpg?quality=90&webp=true&resize=300,272"
+    } ],
+    "address" : [ null ]
+  }, {
+    "id" : 363,
+    "userId" : 13,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 2,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    } ],
+    "address" : [ null ]
+  }, {
+    "id" : 364,
+    "userId" : 13,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 4,
+      "name" : "Kunefe",
+      "description" : "kataifi, soaked in a sweet, sugar-based syrup, and typically layered with cheese,",
+      "price" : 100.0,
+      "quantity" : 2,
+      "imageUrl" : "https://turkishstylecooking.com/wp-content/uploads/2015/11/kunefe3-1.jpg"
+    } ],
+    "address" : [ null ]
+  } ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  } ],
+  "darkMode" : true,
+  "admin" : false,
+  "addresses" : [ {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  } ],
+  "defaultAddress" : {
+    "id" : 0,
+    "name" : "name",
+    "lastname" : "lastname",
+    "address" : "address",
+    "city" : "city",
+    "state" : "state",
+    "zip" : 0,
+    "phone" : "country",
+    "defaultOrNot" : true
+  },
+  "total" : 0.0
+}, {
+  "id" : 14,
+  "name" : "robert",
+  "username" : "robert",
+  "password" : "robert",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ ],
+  "defaultAddress" : null,
+  "total" : 0.0
+}, {
+  "id" : 17,
+  "name" : "aidan",
+  "username" : "aidan",
+  "password" : "test",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ ],
+  "defaultAddress" : null,
+  "total" : 0.0
+}, {
+  "id" : 18,
+  "name" : "james",
+  "username" : "james123",
+  "password" : "test123",
+  "isAdmin" : false,
+  "cart" : [ ],
+  "currentOrders" : [ {
+    "id" : 261,
+    "userId" : 18,
+    "cardNumber" : null,
+    "expDate" : null,
+    "securityCode" : 0,
+    "products" : [ {
+      "id" : 3,
+      "name" : "Lamb Biryani",
+      "description" : "Indian spices, rice, and lamb",
+      "price" : 44.0,
+      "quantity" : 3,
+      "imageUrl" : "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/lamb-biryani-83e5c3d.jpg?quality=90&webp=true&resize=300,272"
+    }, {
+      "id" : 2,
+      "name" : "Manti",
+      "description" : "Turkish ravioli",
+      "price" : 23.32,
+      "quantity" : 4,
+      "imageUrl" : "https://mincerecipes.info/wp-content/uploads/2021/06/handmade-manti-turkish-ravioli-type-dumplings-.jpg"
+    } ],
+    "address" : [ {
+      "id" : 0,
+      "name" : "name",
+      "lastname" : "lastname",
+      "address" : "RIT",
+      "city" : "rochester",
+      "state" : "new york",
+      "zip" : 14623,
+      "phone" : "1",
+      "defaultOrNot" : true
+    } ]
+  } ],
+  "previousOrders" : [ ],
+  "coupons" : [ ],
+  "address" : [ {
+    "id" : 28,
+    "name" : "James",
+    "lastname" : "D",
+    "address" : "33 Main St",
+    "city" : "Rochester",
+    "state" : "NY",
+    "zip" : 14623,
+    "phone" : "9997778888",
+    "defaultOrNot" : false
+  } ],
+  "darkMode" : false,
+  "admin" : false,
+  "addresses" : [ {
+    "id" : 28,
+    "name" : "James",
+    "lastname" : "D",
+    "address" : "33 Main St",
+    "city" : "Rochester",
+    "state" : "NY",
+    "zip" : 14623,
+    "phone" : "9997778888",
+    "defaultOrNot" : false
+  } ],
+  "defaultAddress" : null,
+  "total" : 0.0
+} ]

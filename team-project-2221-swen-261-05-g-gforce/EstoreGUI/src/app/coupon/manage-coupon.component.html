@@ -1,0 +1,61 @@
+<div *ngIf="this.dataTransfer.home.currIsAdmin() === true;">
+    <div class="container col-4 rounded">
+        <div class="container">
+            <div class="card-table" style="color:var(--dark-4);">
+                <div class="header">
+                    <h4 class="title">Add Coupon</h4>
+                <div class="coupons">
+                    <div class="modal-body">
+                        <form ngForm #addCouponForm="ngForm" (ngSubmit)="onAddCoupon(addCouponForm)">
+                            <div class="form-group">
+                                <label for="Code">Code</label>
+                                <input type="text" ngModel name="code" class="form-control" id="code"
+                                    placeholder="Code" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Discount">Discount</label>
+                                <input type="text" ngModel name="discount" class="form-control" id="discount" placeholder="Discount"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Expiration Date">Expiration Date</label>
+                                <input type="text" ngModel name="expirationDate" class="form-control" id="expirationDate" placeholder="Expiration Date"
+                                    required>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="add-coupon-form" class="btn btn-secondary"
+                                    data-dismiss="modal">Close</button>
+                                <!-- If the form is invalid, stop the user from saving -->
+                                <button [disabled]="addCouponForm.invalid" type="submit" class="btn btn-primary">Save
+                                    changes</button>
+                            </div>
+                        </form>
+        
+                    <table class="table table-dark table-hover table-responsive" aria-hidden="true">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Code</th>
+                                <th>Discount</th>
+                                <th>Expiration Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let coupon of this.coupons">
+                                <td>{{coupon?.code}}</td>
+                                <td>{{coupon?.discount*100}}%</td>
+                                <td>{{coupon?.expirationDate}}</td>
+                                <td><button type="button" class="btn btn-danger" (click)="onDeleteCoupon(coupon.id)">Delete</button></td>
+                                <td>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #showDisabled>
+    <h3>Sorry, only admins can see this page</h3>
+</ng-template>
